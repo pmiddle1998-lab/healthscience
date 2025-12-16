@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // Replace with your new domain (include https://)
+        const newBaseUrl = "https://your-new-domain.com";
+
+        // Build the new URL preserving path, search (query), and hash
+        const newUrl = newBaseUrl + window.location.pathname + window.location.search + window.location.hash;
+
+        // Instant redirect
+        window.location.replace(newUrl);
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://your-new-domain.com">
+    </noscript>
+</head>
+<body>
+    <p>Redirecting to <a href="https://your-new-domain.com">new site</a>...</p>
+</body>
+</html>
